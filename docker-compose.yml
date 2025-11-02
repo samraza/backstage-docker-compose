@@ -7,6 +7,7 @@ services:
       - .env
     build: .
     environment:
+      NODE_OPTIONS: --no-node-snapshot
       POSTGRES_HOST: localhost
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
